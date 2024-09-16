@@ -67,6 +67,7 @@ a {
   padding: 65px 0;
   height: 640px;
   background-color: $background-1;
+  border: $border-7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,7 +172,11 @@ a {
   }
 }
 
-.products .nowrap {
-  flex-wrap: nowrap;
-  margin-bottom: 128px;
+.products {
+  padding: 0;
+
+  .nowrap {
+    flex-wrap: nowrap;
+    margin-bottom: 128px;
+  }
 }
