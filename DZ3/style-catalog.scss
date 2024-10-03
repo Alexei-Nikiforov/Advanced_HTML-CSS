@@ -29,17 +29,17 @@ summary::-webkit-details-marker {
       }
 
       .menu {
-        width: $width-2;
+        width: 232px;
         position: absolute;
         top: 75px;
         right: 0;
         padding: 32px;
         box-sizing: border-box;
-        background: $background-1;
+        background: rgb(255, 255, 255);
         box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
 
         &__heading {
-          color: $color-5;
+          color: rgb(0, 0, 0);
           font-size: 14px;
           font-weight: 700;
           line-height: 17px;
@@ -48,7 +48,7 @@ summary::-webkit-details-marker {
 
         &__subheading {
           margin-top: 20px;
-          color: $color-2;
+          color: rgb(241, 109, 127);
           font-size: 14px;
           font-weight: 400;
           line-height: 17px;
@@ -64,12 +64,12 @@ summary::-webkit-details-marker {
         }
 
         &__link {
-          color: $color-6;
+          color: rgb(111, 110, 110);
           font-size: 14px;
           font-weight: 400;
           line-height: 17px;
           &:hover {
-            color: $color-2;
+            color: #f16d7f;
           }
         }
       }
@@ -90,21 +90,21 @@ summary::-webkit-details-marker {
   .filter {
     padding: 13px 0;
     box-sizing: border-box;
-    width: $width-3;
+    width: 360px;
     height: 531px;
     position: absolute;
     &[open] {
       padding: 13px 16px;
-      background: $background-1;
+      background: rgb(255, 255, 255);
       box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
       z-index: 1;
     }
     &[open] .filter__heading {
       top: 39px;
-      color: $color-8;
+      color: rgb(239, 91, 112);
     }
     &[open] path {
-      fill: $color-8;
+      fill: rgb(239, 91, 112);
     }
     &__summary {
       display: flex;
@@ -112,7 +112,7 @@ summary::-webkit-details-marker {
       gap: 11px;
     }
     &__heading {
-      color: $color-1;
+      color: rgb(0, 0, 0);
       font-size: 14px;
       font-weight: 600;
       line-height: 17px;
@@ -121,12 +121,12 @@ summary::-webkit-details-marker {
       margin-top: 16px;
     }
     &__head {
-      color: $color-6;
+      color: rgb(111, 110, 110);
       font-size: 14px;
       font-weight: 400;
       line-height: 17px;
       padding: 8px 11px 11px 11px;
-      border-bottom: $border-2;
+      border-bottom: 1px solid rgb(235, 235, 235);
       border-left: 5px solid rgb(239, 91, 112);
     }
     &__link-box {
@@ -136,16 +136,16 @@ summary::-webkit-details-marker {
       padding: 24px 16px 8px;
     }
     &__link {
-      color: $color-6;
+      color: rgb(111, 110, 110);
       font-size: 14px;
       font-weight: 400;
       line-height: 17px;
       &:hover {
-        color: $color-2;
+        color: rgb(239, 91, 112);
       }
     }
     &__item[open] .filter__head {
-      color: $color-2;
+      color: rgb(239, 91, 112);
     }
   }
 
@@ -162,7 +162,7 @@ summary::-webkit-details-marker {
       z-index: 1;
 
       summary {
-        color: $color-6;
+        color: rgb(111, 110, 110);
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
@@ -171,7 +171,7 @@ summary::-webkit-details-marker {
       &__box {
         padding: -12px;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-        background: $background-1;
+        background: rgb(255, 255, 255);
         padding: 7px 9px 11px;
         box-sizing: border-box;
         width: 79px;
@@ -242,8 +242,8 @@ summary::-webkit-details-marker {
   margin-bottom: 97px;
   width: 284px;
   height: 44px;
-  background: $background-1;
-  border: $border-2;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(196, 196, 196);
   display: flex;
   justify-content: center;
 
@@ -262,14 +262,14 @@ summary::-webkit-details-marker {
     }
 
     a {
-      color: $color-3;
+      color: rgb(196, 196, 196);
     }
 
     a:hover {
-      color: $color-2;
+      color: rgb(239, 91, 112);
     }
   }
   svg:hover path {
-    fill: $color-2;
+    fill: rgb(239, 91, 112);
   }
 }

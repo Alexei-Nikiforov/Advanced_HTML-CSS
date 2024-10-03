@@ -1,0 +1,214 @@
+.header {
+  justify-content: space-evenly;
+}
+
+.breadcrumb {
+  display: block;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+}
+.cart-content__card {
+  max-width: 652px;
+}
+.cart-content__card img {
+  max-width: 262px;
+}
+.cart-content__form {
+  padding-top: 113px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+.cart-content__info_address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-content__info_address-title {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.cart-content__info_address-input {
+  width: 360px;
+  padding: 13px 0 16px 17.14px;
+  border: 1px solid rgb(164, 164, 164);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.cart-content__info_address-input::-webkit-input-placeholder {
+  color: rgb(34, 34, 34);
+}
+.cart-content__info_address-input-text::-webkit-input-placeholder {
+  color: rgb(177, 177, 177);
+}
+.cart-content__info_address-submit {
+  padding: 10px 12px;
+  width: 102px;
+  color: rgb(77, 77, 77);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(164, 164, 164);
+  cursor: pointer;
+}
+.cart-content__info_address-submit:hover {
+  background-color: rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.cart-content__purchase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 39px 37px 42px 44px;
+  background-color: rgb(245, 243, 243);
+}
+.cart-content__purchase_price-first {
+  color: rgb(77, 77, 77);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart-content__purchase_price-first::after {
+  content: "$900";
+  padding-left: 25px;
+  color: rgb(77, 77, 77);
+}
+.cart-content__purchase_price-second {
+  margin-top: 12px;
+  margin-bottom: 21px;
+  margin-right: 5px;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cart-content__purchase_price-second::after {
+  content: "$900";
+  padding-left: 25px;
+  color: rgb(241, 109, 127);
+}
+.cart-content__purchase_line {
+  width: 275px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.cart-content__purchase_button {
+  width: 273px;
+  padding: 15px 0 16px;
+  margin-top: 17px;
+  border: none;
+  background-color: rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+}
+.cart-content__card {
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  display: flex;
+  position: relative;
+  max-width: 652px;
+}
+.cart-content__del {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  top: 28px;
+  right: 22px;
+}
+.cart-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 96px;
+}
+.cart-content__title {
+  color: rgb(34, 34, 34);
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+  width: 262px;
+}
+.cart-content__description {
+  padding: 22px 97px 62px 31px;
+}
+.cart-content__textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cart-content__text {
+  color: rgb(99, 99, 99);
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.cart-content__text_price {
+  color: rgb(241, 109, 127);
+}
+.cart-content__text_grey {
+  color: rgb(111, 110, 110);
+}
+.cart-content__quantity {
+  width: 44px;
+  color: rgb(111, 110, 110);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 16px;
+  margin-left: 24px;
+}
+.cart-content__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 128px;
+}
+.cart-content__btn {
+  color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 17px 41px 16px 39px;
+  border: 1px solid rgb(164, 164, 164);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.cart-content__btn:hover {
+  background-color: rgb(241, 109, 127);
+  color: rgb(255, 255, 255);
+}
+
+.promotion .fon {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=style-cart.css.map */

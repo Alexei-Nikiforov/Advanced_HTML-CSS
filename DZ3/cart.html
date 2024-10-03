@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./style-product.css" />
+		<link rel="stylesheet" href="./style-catalog.css" />
+		<link rel="stylesheet" href="./style-cart.css" />
+		<title>Cart</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__logos">
+				<h2 style="display: none">Logo</h2>
+				<div class="header__logo">
+					<a href="#">
+						<img src="./img/Logo.webp" alt="logo" />
+					</a>
+				</div>
+				<div class="header__search">
+					<button><img src="./img/header_1.svg" alt="button search" /></button>
+				</div>
+			</nav>
+			<nav class="header__menus">
+				<h2 style="display: none">Menu</h2>
+				<div class="header__menu">
+					<input id="check" type="checkbox" />
+					<label for="check">
+						<img src="./img/header_2.svg" alt="burger menu" />
+					</label>
+					<div class="menu">
+						<h2 class="menu__heading">MENU</h2>
+						<h3 class="menu__subheading">MAN</h3>
+						<ul class="menu__ul">
+							<li><a class="menu__link" href="#">Accessories</a></li>
+							<li><a class="menu__link" href="#">Bags</a></li>
+							<li><a class="menu__link" href="#">Denim</a></li>
+							<li><a class="menu__link" href="#">T-Shirts</a></li>
+						</ul>
+						<h3 class="menu__subheading">WOMAN</h3>
+						<ul class="menu__ul">
+							<li><a class="menu__link" href="#">Accessories</a></li>
+							<li><a class="menu__link" href="#">Jackets &amp;&nbsp; Coats</a></li>
+							<li><a class="menu__link" href="#">Polos</a></li>
+							<li><a class="menu__link" href="#">T-Shirts</a></li>
+							<li><a class="menu__link" href="#">Shirts</a></li>
+						</ul>
+						<h3 class="menu__subheading">KIDS</h3>
+						<ul class="menu__ul">
+							<li><a class="menu__link" href="#">Accessories</a></li>
+							<li><a class="menu__link" href="#">Jackets &amp;&nbsp; Coats</a></li>
+							<li><a class="menu__link" href="#">Polos</a></li>
+							<li><a class="menu__link" href="#">T-Shirts</a></li>
+							<li><a class="menu__link" href="#">Shirts</a></li>
+							<li><a class="menu__link" href="#">Bags</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__user">
+					<button class="menu"><img src="./img/header_3.svg" alt="button user authorization" /></button>
+				</div>
+				<div class="header__basket">
+					<button><img src="./img/header_4.svg" alt="button basket" /></button>
+					<div class="header__basket-cart">
+						<div class="header__basket-cart__img">
+							<img src="./img/header_4_ellipse.svg" alt="number of items in the cart" />
+							<div class="header__basket-cart__img-number">
+								<p>5</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="breadcrumb">
+				<a href="#" class="text-1">SHOPPING CART</a>
+				<div>
+					<a href="#" class="text-2"></a>
+				</div>
+			</section>
+			<section class="cart-content">
+				<div class="cart-content__list">
+					<div class="cart-content__card">
+						<img src="./img/man-3.webp" alt="image product basket product 1" />
+						<div class="cart-content__description">
+							<h2 class="cart-content__title">MANGO PEOPLE T-SHIRT</h2>
+							<div class="cart-content__textBox">
+								<p class="cart-content__text">Price: <span class="cart-content__text_price">$300</span></p>
+								<p class="cart-content__text">Color: <span class="cart-content__text_grey">Red</span></p>
+								<p class="cart-content__text">Size: <span class="cart-content__text_grey">Xl</span></p>
+								<p class="cart-content__text">
+									Quantity: <input class="cart-content__quantity" type="number" value="2" />
+								</p>
+							</div>
+							<button class="cart-content__del">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path
+										d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+										fill="#575757"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="cart-content__card">
+						<img src="./img/man-2.webp" alt="image product basket product 2" />
+						<div class="cart-content__description">
+							<h2 class="cart-content__title">MANGO PEOPLE T-SHIRT</h2>
+							<div class="cart-content__textBox">
+								<p class="cart-content__text">Price: <span class="cart-content__text_price">$300</span></p>
+								<p class="cart-content__text">Color: <span class="cart-content__text_grey">Red</span></p>
+								<p class="cart-content__text">Size: <span class="cart-content__text_grey">Xl</span></p>
+								<p class="cart-content__text">
+									Quantity: <input class="cart-content__quantity" type="number" value="2" />
+								</p>
+							</div>
+							<button class="cart-content__del">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path
+										d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+										fill="#575757"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="cart-content__buttons">
+						<a class="cart-content__btn" href="#">CLEAR SHOPPING CART</a>
+						<a class="cart-content__btn" href="#">CONTINUE SHOPPING</a>
+					</div>
+				</div>
+
+				<div class="cart-content__form">
+					<div class="cart-content__info">
+						<div class="cart-content__info_address">
+							<h5 class="cart-content__info_address-title">SHIPPING ADRESS</h5>
+							<input
+								class="cart-content__info_address-input cart-content__info_address-input-text"
+								type="text"
+								placeholder="Bangladesh"
+							/>
+							<input class="cart-content__info_address-input" type="text" placeholder="State" />
+							<input class="cart-content__info_address-input" type="number" placeholder="Postcode / Zip" />
+							<input class="cart-content__info_address-submit" type="submit" value="GET A QUOTE" />
+						</div>
+						<div class="cart-content__purchase">
+							<p class="cart-content__purchase_price-first">SUB TOTAL</p>
+							<p class="cart-content__purchase_price-second">GRAND TOTAL</p>
+							<div class="cart-content__purchase_line"></div>
+							<button class="cart-content__purchase_button">PROCEED TO CHECKOUT</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="promotion">
+				<div class="fon">
+					<div class="promotion__quote">
+						<img src="./img/promotion-face.webp" alt="image girls" />
+						<q>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum</q>
+					</div>
+					<div class="subscribe">
+						<h3>SUBSCRIBE</h3>
+						<h5>FOR OUR NEWLETTER AND PROMOTION</h5>
+						<form action="#">
+							<input type="email" placeholder="    Enter Your Email" required />
+							<button class="btn">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="company">
+				<h6>© 2021 Brand All Rights Reserved.</h6>
+			</div>
+			<div class="buttons">
+				<button class="pinterest">
+					<img src="./img/pinterest.svg" alt="pinterest" />
+				</button>
+				<button class="twitter">
+					<img src="./img/twitter.svg" alt="twitter" />
+				</button>
+			</div>
+		</footer>
+	</body>
+</html>
