@@ -1,0 +1,118 @@
+@import "vars";
+
+summary::webkit-details-marker {
+	display: none;
+}
+
+.center {
+	padding-left: calc(50% - $width-1 / 2);
+	padding-right: calc(50% - $width-1 / 2);
+}
+
+.registration {
+	display: flex;
+	justify-content: center;
+	gap: 128px;
+	padding-top: 64px;
+	padding-bottom: 96px;
+
+	&__inputs {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__title {
+		color: $color-1;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+	}
+
+	&__input {
+		width: 360px;
+		padding: 13px 0 16px 17px;
+		border: $border-8;
+	}
+
+	&__input::placeholder {
+		color: $color-4;
+	}
+
+	&__checkboxes {
+		margin-top: 31px;
+		margin-bottom: 33px;
+		display: flex;
+		gap: 20px;
+		color: $color-5;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 13px;
+		user-select: none;
+	}
+
+	&__text {
+		margin-top: 15px;
+		margin-bottom: 39px;
+		color: $color-12;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 16px;
+	}
+
+	&__button {
+		padding: 16px 0;
+		width: 167px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		color: $color-3;
+		background-color: $background-5;
+		border: $border-3;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		&:hover {
+			box-sizing: border-box;
+			color: $color-2;
+			background-color: $background-7;
+			border: $border-8;
+			& path {
+				fill: $color-2;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		color: $color-5;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 29px;
+		&-title {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 29px;
+			color: $color-5;
+		}
+	}
+
+	&__column {
+		list-style-type: none;
+	}
+
+	&__li {
+		padding-bottom: 16px;
+		display: flex;
+		gap: 28px;
+	}
+
+	&__li::before {
+		content: url(./img/Vector.svg);
+	}
+}

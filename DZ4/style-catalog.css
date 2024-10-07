@@ -14,6 +14,9 @@ summary::-webkit-details-marker {
   left: -99999px;
   visibility: hidden;
 }
+.header__menus .header__menu label {
+  cursor: pointer;
+}
 .header__menus .header__menu .menu {
   opacity: 0;
 }

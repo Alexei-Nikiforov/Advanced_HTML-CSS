@@ -1,0 +1,110 @@
+summary::webkit-details-marker {
+  display: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__title {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__input {
+  width: 360px;
+  padding: 13px 0 16px 17px;
+  border: 1px solid rgb(164, 164, 164);
+}
+.registration__input::-moz-placeholder {
+  color: rgb(159, 159, 159);
+}
+.registration__input::placeholder {
+  color: rgb(159, 159, 159);
+}
+.registration__checkboxes {
+  margin-top: 31px;
+  margin-bottom: 33px;
+  display: flex;
+  gap: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.registration__text {
+  margin-top: 15px;
+  margin-bottom: 39px;
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.registration__button {
+  padding: 16px 0;
+  width: 167px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(241, 109, 127);
+  border: 1px solid rgb(255, 106, 106);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.registration__button:hover {
+  box-sizing: border-box;
+  color: rgb(241, 109, 127);
+  background-color: rgba(244, 244, 244, 0.7);
+  border: 1px solid rgb(164, 164, 164);
+}
+.registration__button:hover path {
+  fill: rgb(241, 109, 127);
+  box-sizing: border-box;
+}
+.registration__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.registration__info-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: rgb(0, 0, 0);
+}
+.registration__column {
+  list-style-type: none;
+}
+.registration__li {
+  padding-bottom: 16px;
+  display: flex;
+  gap: 28px;
+}
+.registration__li::before {
+  content: url(./img/Vector.svg);
+}/*# sourceMappingURL=style-registration.css.map */
