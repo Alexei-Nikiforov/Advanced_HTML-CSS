@@ -215,4 +215,74 @@ a {
     background-size: cover;
     gap: 48px;
   }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .breadcrumb {
+    width: 100%;
+    padding: 24px 0 46px;
+    flex-direction: column;
+    gap: 20%;
+  }
+  .banner-product {
+    color: rgb(255, 255, 255);
+  }
+  .banner-product .carousel-inner {
+    background-color: rgb(247, 247, 247);
+  }
+  .banner-product .carousel-inner img {
+    padding: 85px 0;
+    max-width: 250%;
+    margin: 0 -280px;
+    overflow: hidden;
+  }
+  .description-product {
+    margin: 0;
+    padding: 50px 0 50px 0;
+    max-width: 100%;
+  }
+  .description-product p {
+    width: 326px;
+  }
+  .description-product p br {
+    display: none;
+  }
+  .description-product .price {
+    margin-bottom: 32px;
+  }
+  .description-product .line-2 {
+    border-left: 175px solid rgb(239, 91, 112);
+    height: 1px;
+  }
+  .description-product .sort {
+    width: 100%;
+    margin: 45px 0 60px;
+  }
+  .description-product .sort .text {
+    align-items: center;
+  }
+  .description-product .sort .text span {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .description-product .sort .text span .text-color {
+    width: 109px;
+  }
+  .description-product .sort .text span .text-size {
+    width: 90px;
+  }
+  .description-product .sort .text span .text-quantity {
+    width: 79px;
+  }
+  .description-product .sort .text button {
+    height: 20px;
+  }
+  .products .nowrap {
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 64px 0;
+  }
+  .products .card-hide-mob {
+    display: none;
+  }
 }/*# sourceMappingURL=style-product.css.map */

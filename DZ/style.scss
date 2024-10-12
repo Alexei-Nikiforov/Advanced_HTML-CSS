@@ -765,7 +765,7 @@ header
 	.offers .offer .text {
 		width: $width-4;
 		height: 50px;
-		padding: 98px 94px;
+		padding: 98px 74px;
 	}
 
 	.offers .offer__4 {
@@ -779,7 +779,7 @@ header
 	}
 
 	.offers .offer__4 .fon__4 .text__4 {
-		padding: 30px 92px;
+		padding: 30px 72px;
 	}
 
 	.products .products__cards .card .image .fons {
@@ -808,6 +808,7 @@ header
 	.promotion {
 		max-width: 100%;
 		background-size: cover;
+		background-position: 35% 75%;
 	}
 
 	.promotion .fon {

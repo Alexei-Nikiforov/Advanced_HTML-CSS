@@ -721,7 +721,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
   .offers .offer .text {
     width: 154px;
     height: 50px;
-    padding: 98px 94px;
+    padding: 98px 74px;
   }
   .offers .offer__4 {
     background-position: center;
@@ -732,7 +732,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
     height: 111px;
   }
   .offers .offer__4 .fon__4 .text__4 {
-    padding: 30px 92px;
+    padding: 30px 72px;
   }
   .products .products__cards .card .image .fons {
     width: 100%;
@@ -755,6 +755,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
   .promotion {
     max-width: 100%;
     background-size: cover;
+    background-position: 35% 75%;
   }
   .promotion .fon {
     flex-direction: column;

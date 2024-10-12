@@ -312,4 +312,42 @@ summary::-webkit-details-marker {
   .filtering .sorting {
     gap: 30px;
   }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .filtering {
+    justify-content: center;
+    gap: 60px;
+    height: 71px;
+  }
+  .filtering .filter {
+    left: -32.5px;
+    padding: 13px 25px;
+  }
+  .filtering .filter[open] {
+    padding: 13px 25px;
+  }
+  .filtering .filter__heading {
+    display: none;
+  }
+  .filtering .filter__summary svg {
+    width: 37.5px;
+    height: 25px;
+  }
+  .filtering .sorting {
+    gap: 25px;
+  }
+  .filtering .sorting .details summary {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .products .nowrap {
+    gap: 15px;
+    margin: 0;
+  }
+  .products__cards {
+    margin: 0;
+  }
+  .pagination {
+    margin: 40px 0 65px;
+  }
 }/*# sourceMappingURL=style-catalog.css.map */
