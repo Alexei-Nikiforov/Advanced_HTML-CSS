@@ -1,12 +1,7 @@
-@import "vars";
+@import "../vars";
 
 summary::webkit-details-marker {
 	display: none;
-}
-
-.center {
-	padding-left: calc(50% - $width-1 / 2);
-	padding-right: calc(50% - $width-1 / 2);
 }
 
 .registration {
@@ -104,15 +99,55 @@ summary::webkit-details-marker {
 
 	&__column {
 		list-style-type: none;
+		padding: 0;
 	}
 
 	&__li {
 		padding-bottom: 16px;
 		display: flex;
-		gap: 28px;
+		gap: 23px;
 	}
 
 	&__li::before {
-		content: url(./img/Vector.svg);
+		content: url(../img/Vector.svg);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+	.breadcrumb {
+		display: flex;
+		justify-content: space-around;
+		padding: 60px 0;
+	}
+
+	.registration {
+		max-width: 96%;
+		gap: 22px;
+		padding-top: 40px;
+
+		&__data {
+			width: 360px;
+		}
+
+		&__info {
+			width: 354px;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 19px;
+			&-title {
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 19px;
+			}
+		}
+
+		&__column {
+			padding: 0;
+		}
+	}
+
+	.promotion .fon {
+		background-size: cover;
+		gap: 48px;
 	}
 }

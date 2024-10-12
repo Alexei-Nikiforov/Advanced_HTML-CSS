@@ -2,11 +2,6 @@ summary::webkit-details-marker {
   display: none;
 }
 
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
-}
-
 .registration {
   display: flex;
   justify-content: center;
@@ -99,12 +94,47 @@ summary::webkit-details-marker {
 }
 .registration__column {
   list-style-type: none;
+  padding: 0;
 }
 .registration__li {
   padding-bottom: 16px;
   display: flex;
-  gap: 28px;
+  gap: 23px;
 }
 .registration__li::before {
-  content: url(./img/Vector.svg);
+  content: url(../img/Vector.svg);
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+  .breadcrumb {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+  }
+  .registration {
+    max-width: 96%;
+    gap: 22px;
+    padding-top: 40px;
+  }
+  .registration__data {
+    width: 360px;
+  }
+  .registration__info {
+    width: 354px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  .registration__info-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  .registration__column {
+    padding: 0;
+  }
+  .promotion .fon {
+    background-size: cover;
+    gap: 48px;
+  }
 }/*# sourceMappingURL=style-registration.css.map */

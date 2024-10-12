@@ -1,7 +1,8 @@
-@import "vars";
+@import "../vars";
 
 .header {
 	justify-content: space-evenly;
+	gap: 45%;
 }
 
 .breadcrumb {
@@ -247,5 +248,54 @@
 }
 
 .promotion .fon {
-	justify-content: space-evenly;
+	justify-content: space-around;
+	gap: 0;
+}
+
+.footer {
+	justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+	.breadcrumb {
+		display: flex;
+		justify-content: space-around;
+		padding: 60px 0;
+	}
+
+	.cart-content {
+		flex-wrap: wrap;
+		gap: 64px;
+
+		&__list {
+			width: 736px;
+		}
+
+		&__card {
+			max-width: $width-13;
+		}
+
+		&__form {
+			padding-top: 0;
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+			padding-bottom: 64px;
+		}
+
+		&__buttons {
+			justify-content: center;
+			gap: 48px;
+			padding-top: 22px;
+			padding-bottom: 0;
+		}
+	}
+
+	.promotion .fon {
+		background-size: cover;
+		gap: 48px;
+	}
 }

@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
-@import '_vars';
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +7,7 @@
 
 body {
   scroll-behavior: smooth;
-  background: $background-1;
+  background: rgb(255, 255, 255);
 }
 
 img {
@@ -18,54 +15,65 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, .price, .btn, q, a {
-  font-family: $fontFamily;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+.price,
+.btn,
+q,
+a {
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
   font-size: 48px;
   font-weight: 900;
-  color: $color-1;
+  color: rgb(34, 34, 34);
 }
 
 h2 {
   font-size: 36px;
   font-weight: 700;
-  color: $color-1;
+  color: rgb(34, 34, 34);
 }
 
 h2 .fashion {
-  color: $color-2;
+  color: rgb(241, 109, 127);
 }
 
 h3 {
   font-size: 24px;
   font-weight: 700;
-  color: $color-2;
+  color: rgb(241, 109, 127);
 }
 
 h4 {
   font-size: 16px;
   font-weight: 400;
-  color: $color-3;
+  color: rgb(255, 255, 255);
 }
 
 h5 {
-  color: $color-1;
+  color: rgb(34, 34, 34);
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
 }
 
 h6 {
-  color: $color-5;
+  color: rgb(0, 0, 0);
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
 }
 
 p {
-  color: $color-4;
+  color: rgb(159, 159, 159);
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -82,19 +90,19 @@ input {
 }
 
 .container {
-  max-width: $width-1;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 header {
   max-width: 100%;
   min-height: 75px;
-  background: $background-2;
+  background: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50%;
-  }
+}
 
 header .header__logos {
   display: flex;
@@ -117,7 +125,6 @@ header .header__menus .header__basket {
   position: relative;
 }
 
-
 header .header__menus .header__basket .header__basket-cart {
   position: absolute;
   top: -8px;
@@ -135,7 +142,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 header .header__menus .header__basket .header__basket-cart .header__basket-cart__img .header__basket-cart__img-number p {
-  color: $color-3;
+  color: rgb(255, 255, 255);
   font-size: 12px;
   line-height: 14px;
 }
@@ -150,9 +157,9 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
   display: flex;
   align-items: center;
   gap: 64px;
-  background: $background-3;
+  background: rgb(241, 228, 230);
   margin-bottom: 65px;
-  width: $width-8;
+  width: 1600px;
   position: relative;
 }
 
@@ -168,14 +175,14 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .main .banner .banner__text .line {
-  border-left: $border-1;
+  border-left: 12px solid rgb(241, 109, 127);
   height: 92px;
 }
 
 .main .banner .banner__menu {
-  width: $width-2;
+  width: 232px;
   height: 634px;
-  background-color: $background-1;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -187,7 +194,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
-  color: $color-5;
+  color: rgb(0, 0, 0);
   padding-bottom: 4px;
 }
 
@@ -195,14 +202,14 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  color: $color-2;
+  color: rgb(241, 109, 127);
 }
 
 .main .banner .banner__menu a {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  color: $color-6;
+  color: rgb(111, 110, 110);
   padding-left: 22px;
 }
 
@@ -225,12 +232,12 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .offers .offer {
-  width: $width-3;
+  width: 360px;
   height: 260px;
 }
 
 .offers .offer .text {
-  width: $width-4;
+  width: 154px;
   height: 50px;
   padding: 105px 103px;
   display: flex;
@@ -258,17 +265,17 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 .offers .offer__1 .fon__1,
 .offers .offer__2 .fon__2,
 .offers .offer__3 .fon__3,
-.offers .offer__4 .fon__4  {
-  background: $background-4;
+.offers .offer__4 .fon__4 {
+  background: rgba(33, 22, 22, 0.7);
 }
 
 .offers .offer__4 .fon__4 {
-  width: $width-1;
+  width: 1140px;
   height: 180px;
 }
 
 .offers .offer__4 .fon__4 .text__4 {
-  width: $width-5;
+  width: 160px;
   height: 50px;
   padding: 65px 490px;
   display: flex;
@@ -304,7 +311,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .products .products__cards .card {
-  max-width: $width-3;
+  max-width: 360px;
 }
 
 .products .products__cards .card .img-1 {
@@ -332,19 +339,19 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .products .products__cards .card .image .fons {
-  background: $background-4;
+  background: rgba(33, 22, 22, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: $width-3;
+  width: 360px;
   height: 420px;
   opacity: 0;
 }
 
 .products .products__cards .card .image .fons button {
-  width: $width-6;
+  width: 139px;
   height: 44px;
-  border: $border-2;
+  border: 1px solid rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +359,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .products .products__cards .card .image .fons button span {
-  color: $color-3;
+  color: rgb(255, 255, 255);
 }
 
 .products .products__cards .card .image:hover .fons {
@@ -360,17 +367,17 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .products .products__cards:hover + .products__button button {
-  border: $border-3;
-  background: $background-5;
+  border: 1px solid rgb(255, 106, 106);
+  background: rgb(241, 109, 127);
 }
 
 .products .products__cards:hover + .products__button .btn {
-  color: $color-3;
+  color: rgb(255, 255, 255);
 }
 
 .products .products__cards .card__text {
   padding: 24px 16px;
-  background: $background-6;
+  background: rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -379,34 +386,34 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .products .products__cards .card__text p {
-  color: $color-7;
+  color: rgb(93, 93, 110);
   font-weight: 300;
 }
 
 .products .products__cards .card__text .price {
-  color: $color-2;
+  color: rgb(241, 109, 127);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
 }
 
 .products .products__button button {
-  border: $border-3;
-  width: $width-7;
+  border: 1px solid rgb(255, 106, 106);
+  width: 211px;
   height: 47px;
   padding: 14px 37px;
   margin-bottom: 95px;
 }
 
 .products .products__button .btn {
-  color: $color-8;
+  color: rgb(242, 99, 118);
   font-weight: 400;
   font-size: 16px;
 }
 
 .feature {
-  width: $width-8;
-  background: $background-2;
+  width: 1600px;
+  background: rgb(34, 34, 34);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +422,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .feature .features__text {
-  width: $width-3;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,13 +431,13 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 .feature .features__text h4 {
   margin-top: 28px;
   margin-bottom: 16px;
-  color: $color-3;
+  color: rgb(255, 255, 255);
   font-size: 19.96px;
   line-height: 24px;
 }
 
 .feature .features__text p {
-  color: $color-3;
+  color: rgb(255, 255, 255);
   font-size: 13.97px;
   font-weight: 300;
   line-height: 17px;
@@ -443,19 +450,19 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 
 .promotion {
   background-image: url(./img/promotion-fon.webp);
-  width: $width-8;
+  width: 1600px;
 }
 
 .promotion .fon {
-  background: $background-7;
+  background: rgba(244, 244, 244, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 223px;
+  gap: 323px;
 }
 
 .promotion .fon .promotion__quote {
-  width: $width-3;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,7 +473,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .promotion .fon .promotion__quote q {
-  color: $background-2;
+  color: rgb(34, 34, 34);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -481,12 +488,12 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .promotion .fon .subscribe h3 {
-  color: $background-2;
+  color: rgb(34, 34, 34);
   text-align: center;
 }
 
 .promotion .fon .subscribe h5 {
-  color: $background-2;
+  color: rgb(34, 34, 34);
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -498,21 +505,21 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .promotion .fon .subscribe form input {
-  width: $width-9;
+  width: 256px;
   height: 49px;
-  background: $background-1;
+  background: rgb(255, 255, 255);
   border-radius: 20px 0 0 20px;
 }
 
 .promotion .fon .subscribe button {
-  width: $width-10;
+  width: 100px;
   height: 49px;
-  background: $background-5;
+  background: rgb(241, 109, 127);
   border-radius: 0 20px 20px 0;
 }
 
 .promotion .fon .subscribe .btn {
-  color: $color-3;
+  color: rgb(255, 255, 255);
   font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
@@ -524,7 +531,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 .footer {
   max-width: 100%;
   min-height: 75px;
-  background: $background-2;
+  background: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,7 +539,7 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .footer .company h6 {
-  color: $color-3;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -545,9 +552,9 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 
 .footer .buttons button {
   display: block;
-  max-width: $width-11;
+  max-width: 32px;
   max-height: 32px;
-  background-color: $background-1;
+  background-color: rgb(255, 255, 255);
 }
 
 .footer .buttons .facebook:hover img,
@@ -578,257 +585,203 @@ header .header__menus .header__basket .header__basket-cart .header__basket-cart_
 }
 
 .footer .buttons button:hover {
-  background-color: $background-5;
+  background-color: rgb(241, 109, 127);
 }
 
-@media(min-width: 768px) and (max-width: 1140px) {
-
+@media (min-width: 768px) and (max-width: 1140px) {
   .container {
     max-width: 96%;
   }
-
   h1 {
     font-size: 44px;
   }
-
   h2 {
     font-size: 24px;
   }
-
   .header {
     gap: 45%;
   }
-
   .main .banner {
     gap: 39px;
-    width: $width-12;
+    width: 768px;
   }
-
   .main .banner .banner__image {
     max-width: 50%;
   }
-
   .main .banner .banner__text {
     gap: 16px;
   }
-
   .offers {
     justify-content: center;
     gap: 19px;
     margin-bottom: 110px;
   }
-
   .offers .offer {
-    width: $width-2;
+    width: 232px;
     height: 168px;
   }
-
   .offers .offer__1,
   .offers .offer__2,
   .offers .offer__3 {
     background-size: 232px 168px;
   }
-
   .offers .offer .text {
-    width: $width-4;
+    width: 154px;
     height: 50px;
     padding: 59px 39px;
   }
-
   .offers .offer__4 {
     background-size: 736px 116px;
   }
-
   .offers .offer__4 .fon__4 {
-    width: $width-13;
+    width: 736px;
     height: 116px;
   }
-
   .offers .offer__4 .fon__4 .text__4 {
     padding: 33px 287px;
   }
-
   .products .products__cards {
     gap: 16px;
   }
-
   .products .products__button button {
     margin-bottom: 65px;
   }
-
   .feature {
     width: 100%;
     flex-direction: column;
     gap: 48px;
     padding: 48px 0 64px;
   }
-
   .promotion {
     max-width: 100%;
     background-size: cover;
   }
-
   .promotion .fon {
     flex-direction: column;
     gap: 64px;
   }
-
   .promotion .fon .promotion__quote {
     margin-top: 64px;
     margin-bottom: 0px;
   }
-
   .promotion .fon .subscribe {
     margin-bottom: 140px;
   }
-
   .promotion .fon .subscribe h5 {
     margin-bottom: 27px;
   }
-
   .footer {
     gap: 43%;
   }
 }
-
-@media(min-width: 320px) and (max-width: 767px) {
-
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 96%;
   }
-
   h1 {
     font-size: 38px;
   }
-
   h2 {
     font-size: 20px;
   }
-
   .header {
     gap: 40%;
   }
-
   .header .header__menus .header__user {
     display: none;
   }
-
   .header .header__menus .header__basket {
     display: none;
   }
-
   .main .banner {
     width: 100%;
     min-height: 363px;
     justify-content: center;
   }
-
   .main .banner .banner__image {
     display: none;
   }
-
   .main .banner .banner__text {
     gap: 15px;
   }
-
   .offers {
     justify-content: center;
     gap: 32px;
     margin-bottom: 64px;
   }
-
   .offers .offer {
-    width: $width-14;
+    width: 320px;
     height: 247px;
   }
-
   .offers .offer__1,
   .offers .offer__2,
   .offers .offer__3 {
     background-size: 320px 247px;
   }
-
   .offers .offer .text {
-    width: $width-4;
+    width: 154px;
     height: 50px;
     padding: 98px 94px;
   }
-
   .offers .offer__4 {
     background-position: center;
     background-size: cover;
   }
-
   .offers .offer__4 .fon__4 {
-    width: $width-14;
+    width: 320px;
     height: 111px;
   }
-
   .offers .offer__4 .fon__4 .text__4 {
     padding: 30px 92px;
   }
-
   .products .products__cards .card .image .fons {
     width: 100%;
   }
-
   .products .products__title {
     margin-bottom: 64px;
   }
-
   .products .products__title h5 {
     margin-bottom: 3px;
   }
-
   .feature {
     max-width: 100%;
     flex-direction: column;
     gap: 46px;
     padding: 48px 0 81px;
   }
-
   .feature .features__text {
-    width: $width-14;
+    width: 320px;
   }
-
   .promotion {
     max-width: 100%;
     background-size: cover;
   }
-
   .promotion .fon {
     flex-direction: column;
     gap: 64px;
   }
-
   .promotion .fon .promotion__quote {
     margin-top: 64px;
     margin-bottom: 0px;
   }
-
   .promotion .fon .subscribe {
     margin-bottom: 110px;
   }
-
   .promotion .fon .subscribe form input {
-    width: $width-15;
+    width: 205px;
   }
-
   .promotion .fon .subscribe button {
-    width: $width-16;
+    width: 95px;
   }
-
   .promotion .fon .subscribe h5 {
     margin-bottom: 22px;
   }
-
   .promotion .fon .promotion__quote {
-    width: $width-14;
+    width: 320px;
   }
-
   .footer {
     flex-direction: column-reverse;
     gap: 40px;
     height: 143px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

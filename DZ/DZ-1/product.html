@@ -9,8 +9,8 @@
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./style-catalog.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../DZ-2/style-catalog.css" />
 		<link rel="stylesheet" href="./style-product.css" />
 		<title>Product</title>
 	</head>
@@ -20,11 +20,11 @@
 				<h2 style="display: none">Logo</h2>
 				<div class="header__logo">
 					<a href="#">
-						<img src="./img/Logo.webp" alt="logo" />
+						<img src="../img/Logo.webp" alt="logo" />
 					</a>
 				</div>
 				<div class="header__search">
-					<button><img src="./img/header_1.svg" alt="button search" /></button>
+					<button><img src="../img/header_1.svg" alt="button search" /></button>
 				</div>
 			</nav>
 			<nav class="header__menus">
@@ -32,7 +32,7 @@
 				<div class="header__menu">
 					<input id="check" type="checkbox" />
 					<label for="check">
-						<img src="./img/header_2.svg" alt="burger menu" />
+						<img src="../img/header_2.svg" alt="burger menu" />
 					</label>
 					<div class="menu">
 						<h2 class="menu__heading">MENU</h2>
@@ -63,13 +63,13 @@
 					</div>
 				</div>
 				<div class="header__user">
-					<button class="menu"><img src="./img/header_3.svg" alt="button user authorization" /></button>
+					<button class="menu"><img src="../img/header_3.svg" alt="button user authorization" /></button>
 				</div>
 				<div class="header__basket">
-					<button><img src="./img/header_4.svg" alt="button basket" /></button>
+					<button><img src="../img/header_4.svg" alt="button basket" /></button>
 					<div class="header__basket-cart">
 						<div class="header__basket-cart__img">
-							<img src="./img/header_4_ellipse.svg" alt="number of items in the cart" />
+							<img src="../img/header_4_ellipse.svg" alt="number of items in the cart" />
 							<div class="header__basket-cart__img-number">
 								<p>5</p>
 							</div>
@@ -80,11 +80,11 @@
 		</header>
 		<main class="main">
 			<section class="breadcrumb">
-				<a href="#" class="text-1">NEW ARRIVALS</a>
-				<div>
-					<a href="#" class="text-2">HOME / </a>
-					<a href="#" class="text-2"> MEN / </a>
-					<a href="#" class="color-text-1">NEW ARRIVALS</a>
+				<h2 class="breadcrumb__heading">NEW ARRIVAlS</h2>
+				<div class="breadcrumb__links">
+					<div class="breadcrumb__box"><a href="#" class="breadcrumb__link">HOME</a></div>
+					<div class="breadcrumb__box"><a href="#" class="breadcrumb__link">MEN</a></div>
+					<div class="breadcrumb__box"><a href="#" class="breadcrumb__link">NEW ARRIVAlS</a></div>
 				</div>
 			</section>
 			<section class="banner">
@@ -92,10 +92,10 @@
 					<div id="carouselExampleFade" class="carousel slide carousel-fade">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img src="./img/banner-product-1.webp" alt="product image 1" />
+								<img src="../img/banner-product-1.webp" alt="product image 1" />
 							</div>
 							<div class="carousel-item">
-								<img src="./img/banner-product-2.webp" alt="product image 2" />
+								<img src="../img/banner-product-2.webp" alt="product image 2" />
 							</div>
 						</div>
 						<button
@@ -134,24 +134,24 @@
 					<div class="text">
 						<span class="text-color">CHOOSE COLOR</span>
 						<button>
-							<img src="./img/option.svg" alt="button option color" />
+							<img src="../img/option.svg" alt="button option color" />
 						</button>
 					</div>
 					<div class="text">
 						<span class="text-size">CHOOSE SIZE</span>
 						<button>
-							<img src="./img/option.svg" alt="button option color" />
+							<img src="../img/option.svg" alt="button option color" />
 						</button>
 					</div>
 					<div class="text">
 						<span class="text-quantity">QUANTITY</span>
 						<button>
-							<img src="./img/option.svg" alt="button option color" />
+							<img src="../img/option.svg" alt="button option color" />
 						</button>
 					</div>
 				</div>
 				<button class="cart">
-					<img src="./img/description-product__cart.svg" alt="image cart" />
+					<img src="../img/description-product__cart.svg" alt="image cart" />
 					<h5>Add to Cart</h5>
 				</button>
 			</section>
@@ -161,7 +161,7 @@
 						<div class="image img-4">
 							<div class="fons">
 								<button>
-									<img src="./img/product-basket.svg" alt="image product basket product 4" />
+									<img src="../img/product-basket.svg" alt="image product basket product 4" />
 									<span>Add to Cart</span>
 								</button>
 							</div>
@@ -179,7 +179,7 @@
 						<div class="image img-3">
 							<div class="fons">
 								<button>
-									<img src="./img/product-basket.svg" alt="image product basket product 5" />
+									<img src="../img/product-basket.svg" alt="image product basket product 5" />
 									<span>Add to Cart</span>
 								</button>
 							</div>
@@ -193,11 +193,11 @@
 							<span class="price">$52.00</span>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card card-hide">
 						<div class="image img-6">
 							<div class="fons">
 								<button>
-									<img src="./img/product-basket.svg" alt="image product basket product 6" />
+									<img src="../img/product-basket.svg" alt="image product basket product 6" />
 									<span>Add to Cart</span>
 								</button>
 							</div>
@@ -216,7 +216,7 @@
 			<section class="promotion">
 				<div class="fon">
 					<div class="promotion__quote">
-						<img src="./img/promotion-face.webp" alt="image girls" />
+						<img src="../img/promotion-face.webp" alt="image girls" />
 						<q>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</q>
 					</div>
 					<div class="subscribe">
@@ -236,10 +236,10 @@
 			</div>
 			<div class="buttons">
 				<button class="pinterest">
-					<img src="./img/pinterest.svg" alt="pinterest" />
+					<img src="../img/pinterest.svg" alt="pinterest" />
 				</button>
 				<button class="twitter">
-					<img src="./img/twitter.svg" alt="twitter" />
+					<img src="../img/twitter.svg" alt="twitter" />
 				</button>
 			</div>
 		</footer>

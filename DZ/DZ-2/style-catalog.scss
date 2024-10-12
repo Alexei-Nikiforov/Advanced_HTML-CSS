@@ -1,4 +1,4 @@
-@import "vars";
+@import "../vars";
 
 summary {
 	display: block;
@@ -8,6 +8,7 @@ summary::-webkit-details-marker {
 }
 
 .header {
+	gap: 58%;
 	position: relative;
 
 	&__menus {
@@ -32,17 +33,17 @@ summary::-webkit-details-marker {
 			}
 
 			.menu {
-				width: 232px;
+				width: $width-2;
 				position: absolute;
 				top: 75px;
 				right: 0;
 				padding: 32px;
 				box-sizing: border-box;
-				background: rgb(255, 255, 255);
+				background: $background-1;
 				box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
 				&__heading {
-					color: rgb(0, 0, 0);
+					color: $color-5;
 					font-size: 14px;
 					font-weight: 700;
 					line-height: 17px;
@@ -51,7 +52,7 @@ summary::-webkit-details-marker {
 
 				&__subheading {
 					margin-top: 20px;
-					color: rgb(241, 109, 127);
+					color: $color-2;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 17px;
@@ -67,16 +68,73 @@ summary::-webkit-details-marker {
 				}
 
 				&__link {
-					color: rgb(111, 110, 110);
+					color: $color-6;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 17px;
 					&:hover {
-						color: #f16d7f;
+						color: $color-2;
 					}
 				}
 			}
 		}
+	}
+}
+
+.center {
+	padding-left: calc(50% - 570px);
+	padding-right: calc(50% - 570px);
+}
+
+.breadcrumb {
+	background: $background-3;
+	height: 148px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40%;
+
+	&__heading {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: $color-2;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__link {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration: none;
+		color: $color-9;
+		&:hover {
+			color: $color-2;
+		}
+	}
+
+	&__box:last-of-type .breadcrumb__link {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		color: $color-2;
+	}
+
+	&__box:not(:last-child)::after {
+		content: "/";
+		padding-left: 8px;
+		padding-right: 8px;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration: none;
+		color: $color-9;
 	}
 }
 
@@ -93,21 +151,21 @@ summary::-webkit-details-marker {
 	.filter {
 		padding: 13px 0;
 		box-sizing: border-box;
-		width: 360px;
+		width: $width-3;
 		height: 531px;
 		position: absolute;
 		&[open] {
 			padding: 13px 16px;
-			background: rgb(255, 255, 255);
+			background: $background-1;
 			box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 			z-index: 1;
 		}
 		&[open] .filter__heading {
 			top: 39px;
-			color: rgb(239, 91, 112);
+			color: $color-11;
 		}
 		&[open] path {
-			fill: rgb(239, 91, 112);
+			fill: $color-11;
 		}
 		&__summary {
 			display: flex;
@@ -115,7 +173,7 @@ summary::-webkit-details-marker {
 			gap: 11px;
 		}
 		&__heading {
-			color: rgb(0, 0, 0);
+			color: $color-5;
 			font-size: 14px;
 			font-weight: 600;
 			line-height: 17px;
@@ -124,7 +182,7 @@ summary::-webkit-details-marker {
 			margin-top: 16px;
 		}
 		&__head {
-			color: rgb(111, 110, 110);
+			color: $color-6;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 17px;
@@ -139,16 +197,16 @@ summary::-webkit-details-marker {
 			padding: 24px 16px 8px;
 		}
 		&__link {
-			color: rgb(111, 110, 110);
+			color: $color-6;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 17px;
 			&:hover {
-				color: rgb(239, 91, 112);
+				color: $color-11;
 			}
 		}
 		&__item[open] .filter__head {
-			color: rgb(239, 91, 112);
+			color: $color-11;
 		}
 	}
 
@@ -165,7 +223,7 @@ summary::-webkit-details-marker {
 			z-index: 1;
 
 			summary {
-				color: rgb(111, 110, 110);
+				color: $color-6;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 17px;
@@ -174,10 +232,10 @@ summary::-webkit-details-marker {
 			&__box {
 				padding: -12px;
 				box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-				background: rgb(255, 255, 255);
+				background: $background-1;
 				padding: 7px 9px 11px;
 				box-sizing: border-box;
-				width: 79px;
+				width: $width-19;
 				display: flex;
 				flex-direction: column;
 				gap: 6px;
@@ -204,39 +262,39 @@ summary::-webkit-details-marker {
 	}
 
 	&__cards .card .img-man-1 {
-		background-image: url(./img/man-1.webp);
+		background-image: url(../img/man-1.webp);
 	}
 
 	&__cards .card .img-man-2 {
-		background-image: url(./img/man-2.webp);
+		background-image: url(../img/man-2.webp);
 	}
 
 	&__cards .card .img-man-3 {
-		background-image: url(./img/man-3.webp);
+		background-image: url(../img/man-3.webp);
 	}
 
 	&__cards .card .img-man-4 {
-		background-image: url(./img/man-4.webp);
+		background-image: url(../img/man-4.webp);
 	}
 
 	&__cards .card .img-man-5 {
-		background-image: url(./img/man-5.webp);
+		background-image: url(../img/man-5.webp);
 	}
 
 	&__cards .card .img-man-6 {
-		background-image: url(./img/man-6.webp);
+		background-image: url(../img/man-6.webp);
 	}
 
 	&__cards .card .img-man-7 {
-		background-image: url(./img/man-7.webp);
+		background-image: url(../img/man-7.webp);
 	}
 
 	&__cards .card .img-man-8 {
-		background-image: url(./img/man-8.webp);
+		background-image: url(../img/man-8.webp);
 	}
 
 	&__cards .card .img-man-9 {
-		background-image: url(./img/man-9.webp);
+		background-image: url(../img/man-9.webp);
 	}
 }
 
@@ -245,8 +303,8 @@ summary::-webkit-details-marker {
 	margin-bottom: 97px;
 	width: 284px;
 	height: 44px;
-	background: rgb(255, 255, 255);
-	border: 1px solid rgb(196, 196, 196);
+	background: $background-1;
+	border: $border-7;
 	display: flex;
 	justify-content: center;
 
@@ -269,10 +327,28 @@ summary::-webkit-details-marker {
 		}
 
 		a:hover {
-			color: rgb(239, 91, 112);
+			color: $color-2;
 		}
 	}
 	svg:hover path {
-		fill: rgb(239, 91, 112);
+		fill: $color-2;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+	.header {
+		gap: 53%;
+	}
+	.breadcrumb {
+		justify-content: center;
+	}
+	.filtering {
+		justify-content: center;
+		gap: 465px;
+		height: 81px;
+
+		.sorting {
+			gap: 30px;
+		}
 	}
 }

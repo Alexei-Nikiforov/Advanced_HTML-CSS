@@ -7,6 +7,7 @@ summary::-webkit-details-marker {
 }
 
 .header {
+  gap: 58%;
   position: relative;
 }
 .header__menus .header__menu #check {
@@ -63,7 +64,59 @@ summary::-webkit-details-marker {
   line-height: 17px;
 }
 .header__menus .header__menu .menu__link:hover {
-  color: #f16d7f;
+  color: rgb(241, 109, 127);
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.breadcrumb {
+  background: rgb(241, 228, 230);
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40%;
+}
+.breadcrumb__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgb(241, 109, 127);
+}
+.breadcrumb__links {
+  display: flex;
+}
+.breadcrumb__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: rgb(99, 99, 99);
+}
+.breadcrumb__link:hover {
+  color: rgb(241, 109, 127);
+}
+.breadcrumb__box:last-of-type .breadcrumb__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(241, 109, 127);
+}
+.breadcrumb__box:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: rgb(99, 99, 99);
 }
 
 .filtering {
@@ -184,31 +237,31 @@ summary::-webkit-details-marker {
   margin-bottom: 0;
 }
 .products__cards .card .img-man-1 {
-  background-image: url(./img/man-1.webp);
+  background-image: url(../img/man-1.webp);
 }
 .products__cards .card .img-man-2 {
-  background-image: url(./img/man-2.webp);
+  background-image: url(../img/man-2.webp);
 }
 .products__cards .card .img-man-3 {
-  background-image: url(./img/man-3.webp);
+  background-image: url(../img/man-3.webp);
 }
 .products__cards .card .img-man-4 {
-  background-image: url(./img/man-4.webp);
+  background-image: url(../img/man-4.webp);
 }
 .products__cards .card .img-man-5 {
-  background-image: url(./img/man-5.webp);
+  background-image: url(../img/man-5.webp);
 }
 .products__cards .card .img-man-6 {
-  background-image: url(./img/man-6.webp);
+  background-image: url(../img/man-6.webp);
 }
 .products__cards .card .img-man-7 {
-  background-image: url(./img/man-7.webp);
+  background-image: url(../img/man-7.webp);
 }
 .products__cards .card .img-man-8 {
-  background-image: url(./img/man-8.webp);
+  background-image: url(../img/man-8.webp);
 }
 .products__cards .card .img-man-9 {
-  background-image: url(./img/man-9.webp);
+  background-image: url(../img/man-9.webp);
 }
 
 .pagination {
@@ -217,7 +270,7 @@ summary::-webkit-details-marker {
   width: 284px;
   height: 44px;
   background: rgb(255, 255, 255);
-  border: 1px solid rgb(196, 196, 196);
+  border: 1px solid rgb(234, 234, 234);
   display: flex;
   justify-content: center;
 }
@@ -238,8 +291,25 @@ summary::-webkit-details-marker {
   color: rgb(196, 196, 196);
 }
 .pagination__numers a:hover {
-  color: rgb(239, 91, 112);
+  color: rgb(241, 109, 127);
 }
 .pagination svg:hover path {
-  fill: rgb(239, 91, 112);
+  fill: rgb(241, 109, 127);
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+  .header {
+    gap: 53%;
+  }
+  .breadcrumb {
+    justify-content: center;
+  }
+  .filtering {
+    justify-content: center;
+    gap: 465px;
+    height: 81px;
+  }
+  .filtering .sorting {
+    gap: 30px;
+  }
 }/*# sourceMappingURL=style-catalog.css.map */
